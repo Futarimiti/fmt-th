@@ -1,0 +1,49 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           fmt-th
+version:        0.1.0.0
+synopsis:       Type-safe formatting quasiquoters
+description:    Please see the README on GitHub at <https://github.com/Futarimiti/fmt-th#readme>
+category:       Text
+homepage:       https://github.com/Futarimiti/fmt-th#readme
+bug-reports:    https://github.com/Futarimiti/fmt-th/issues
+author:         Carman Fu
+maintainer:     example@example.com
+copyright:      Carman Fu 2024
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/Futarimiti/fmt-th
+
+library
+  exposed-modules:
+      Text.Printf.TH
+  other-modules:
+      Paths_fmt_th
+  autogen-modules:
+      Paths_fmt_th
+  hs-source-dirs:
+      src
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      LambdaCase
+      TypeSynonymInstances
+      FlexibleInstances
+      InstanceSigs
+      ScopedTypeVariables
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+    , template-haskell
+  default-language: Haskell2010
