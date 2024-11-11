@@ -1,5 +1,5 @@
 {
-  description = "TH check for SQL statements";
+  description = "Printf macros";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
